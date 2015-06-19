@@ -13,8 +13,8 @@ Note: Currently does not support SmartOS.
 
 #### Boundary Meter versions v4.2 or later 
 
-- To install new meter go to Settings->Installation or [see instructons](https://help.boundary.com/hc/en-us/sections/200634331-Installation).
-- To upgrade the meter to the latest version - [see instructons](https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter).
+- To install new meter go to Settings->Installation or [see instructions](https://help.boundary.com/hc/en-us/sections/200634331-Installation).
+- To upgrade the meter to the latest version - [see instructions](https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter).
 
 #### Boundary Meter versions earlier than v4.2
 
@@ -43,10 +43,6 @@ None
 |Ping Response Time|The response time from the ping command|
 
 ### Dashboards
-
-None
-
-### References
 
 None
 
