@@ -12,6 +12,8 @@ local clone = framework.table.clone
 
 local params = framework.params 
 
+local HOST_IS_DOWN = -1
+
 local commands = {
   linux = { path = '/bin/ping', args = {'-n', '-w 2', '-c 1'} },
   win32 = { path = 'C:/windows/system32/ping.exe', args = {'-n', '1', '-w', '3000'} },
@@ -31,6 +33,7 @@ local function createPollers (params, cmd)
     cmd = clone(cmd)
     table.insert(cmd.args, item.host)
     cmd.info = item.source
+    cmd.callback_on_errors = true
 
     local data_source = CommandOutputDataSource:new(cmd)
     local poll_interval = tonumber(item.pollInterval or params.pollInterval) * 1000
@@ -47,12 +50,12 @@ local function parseOutput(context, output)
 
   if isEmpty(output) then
     context:emit('error', 'Unable to obtain any output.')
-    return
+    return HOST_IS_DOWN
   end
 
   if (string.find(output, "unknown host") or string.find(output, "could not find host.")) then
     context:emit('error', 'The host ' .. context.args[#context.args] .. ' was not found.')
-    return
+    return HOST_IS_DOWN
   end
 
   local index
@@ -69,7 +72,7 @@ local function parseOutput(context, output)
     prevIndex = index
   end
 
-  return -1
+  return HOST_IS_DOWN 
 end
 
 local pollers = createPollers(params, ping_command)
