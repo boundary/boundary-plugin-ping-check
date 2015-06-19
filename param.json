@@ -2,7 +2,7 @@
    "items": [
       {
          "source": "google1",
-         "pollInterval": "5",
+         "pollInterval": "1",
          "host": "www.google.com"
       }
    ],
