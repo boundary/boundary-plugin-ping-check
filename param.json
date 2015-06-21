@@ -1,9 +1,14 @@
 {
    "items": [
       {
-         "source": "google1",
-         "pollInterval": "1",
-         "host": "www.google.com"
+        "source": "Ping Google",
+        "pollInterval": "1",
+        "host": "www.google.com"
+      },
+      {
+        "source" : "Ping Boundary",
+        "pollInterval" : "2",
+        "host" : "www.boundary.com"
       }
    ],
    "pollInterval": 1000

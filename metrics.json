@@ -4,7 +4,7 @@
     "defaultResolutionMS": 1000,
     "description": "The response time from the ping command",
     "displayName": "Ping Response Time",
-    "displayNameShort": "ping-time",
+    "displayNameShort": "Ping Time",
     "unit": "duration"
   }
 }
