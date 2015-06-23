@@ -18,7 +18,7 @@ local HOST_IS_DOWN = -1
 -- Define a map of platform to ping commands
 local commands = {
   linux = { path = '/bin/ping', args = {'-n', '-w 2', '-c 1'} },
-  win32 = { path = env.get('SystemRoot') .. '/system32/ping.exe', args = {'-n', '1', '-w', '3000'} },
+  win32 = { path = (env.get('SystemRoot') or 'C:/Windows') .. '/system32/ping.exe', args = {'-n', '1', '-w', '3000'} },
   darwin = { path = '/sbin/ping', args = {'-n', '-t 2', '-c 1'} }
 }
 
