@@ -70,7 +70,7 @@ local function parseOutput(context, output)
     if not index then break end
 
     local line = string.sub(output, prevIndex, index-1)
-    local _, _, time  = string.find(line, "time=([0-9]*%.?[0-9]+)")
+    local _, _, time  = string.find(line, "time[=<]([0-9]*%.?[0-9]+)")
     if time then 
       return tonumber(time)
     end
