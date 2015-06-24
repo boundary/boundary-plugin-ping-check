@@ -1419,7 +1419,9 @@ function CommandOutputDataSource:fetch(context, callback, parser, params)
     end
     -- TODO: Add context for callback?
     if callback then
-    callback({context = self, info = self.info, output = output})
+      process.nextTick(function () 
+          callback({context = self, info = self.info, output = output})
+      end)
     end
   end)
 end
