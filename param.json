@@ -1,15 +1,75 @@
 {
-   "items": [
-      {
-        "source": "Ping Google",
-        "pollInterval": "1",
-        "host": "www.google.com"
-      },
-      {
-        "source" : "Ping Boundary",
-        "pollInterval" : "2",
-        "host" : "www.boundary.com"
-      }
-   ],
-   "pollInterval": 1000
+  "items":[
+    {
+      "source":"source_01",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_02",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_03",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_04",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_05",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_06",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_07",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_08",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_09",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_10",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_11",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_12",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+    {
+      "source":"source_13",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    },
+   {
+      "source":"source_14",
+      "host":"127.0.0.1",
+      "pollInterval":"1"
+    }
+  ],
+  "pollInterval":500
 }
