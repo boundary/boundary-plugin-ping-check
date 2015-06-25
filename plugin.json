@@ -2,12 +2,7 @@
   "name": "Boundary Pingcheck plugin",
   "version": "0.9.1",
   "meterVersionRequired": "4.2.0-611",
-  "os": [
-    "Linux",
-    "Windows",
-    "SmartOS",
-    "OS X"
-  ],
+  "unsupportedPlatforms" : [ ],
   "tags": "ping",
   "description": "Pings a set of hosts and reports back their response time",
   "icon": "icon.png",
