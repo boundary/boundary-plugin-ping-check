@@ -5,6 +5,12 @@
   "unsupportedPlatforms" : [ ],
   "tags": "ping",
   "description": "Pings a set of hosts and reports back their response time",
+  "dashboards" : [
+                 {
+                 "name" : "CPU Core",
+                 "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-PING_RESPONSETIME=0-0-1-1"
+                 }
+  ],
   "icon": "icon.png",
   "command": "node index.js",
   "command_lua": "boundary-meter init.lua",
