@@ -44,5 +44,6 @@ None
 
 ### Dashboards
 
-None
-
+|Dashboard Name|Metrics Displayed |
+|:-------------|:-----------------|
+|Ping Check    |Ping Response Time|
