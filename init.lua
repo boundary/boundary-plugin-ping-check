@@ -59,7 +59,6 @@ local function parseOutput(context, output)
   end
 
   if (string.find(output, "unknown host") or string.find(output, "could not find host.")) then
-    context:emit('error', 'The host ' .. context.args[#context.args] .. ' was not found.')
     return HOST_IS_DOWN
   end
 
