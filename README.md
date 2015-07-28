@@ -1,9 +1,12 @@
 # Boundary Ping Check Plugin
 
 Pings a set of hosts and reports on the response time. The plugin allows multiple hosts to be ping'd and each of those hosts to set their own Poll interval. See video [walkthrough](https://help.boundary.com/hc/articles/201383932).
-Note: Currently does not support SmartOS.
+
+**NOTE**: This plugin parses the output of the ping utility, therefore this plugin only works on systems running the Boundary meter in an English locale.
 
 ### Prerequisites
+
+- ping command line utility must be installed on the system where the plugin is deployed.
 
 #### Supported OS
 
