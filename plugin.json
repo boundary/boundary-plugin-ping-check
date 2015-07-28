@@ -1,6 +1,6 @@
 {
   "name": "Boundary Pingcheck plugin",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "meterVersionRequired": "4.2.0-611",
   "unsupportedPlatforms" : [ ],
   "tags": "ping",
@@ -9,7 +9,7 @@
                  {
                  "name" : "Ping Check",
                  "layout" : "d-w=1&d-h=1&d-pad=5&d-bg=none&d-g-PING_RESPONSETIME=0-0-1-1"
-                 }
+    }
   ],
   "icon": "icon.png",
   "command": "node index.js",
@@ -26,14 +26,7 @@
     "schemaTitle": "Host"
   },
   "paramSchema": [
-    {
-      "title": "Source",
-      "name": "source",
-      "description": "The source to display in the legend for the host. Ex. google",
-      "type": "string",
-      "required": true
-    },
-    {
+   {
       "title": "Host",
       "name": "host",
       "description": "The Hostname or IP Address to ping.  For example, www.google.com or 173.194.33.112",
@@ -46,6 +39,13 @@
       "description": "The Poll Interval to send a ping to the host in seconds. Ex. 5",
       "type": "string",
       "default": 5,
+      "required": true
+    },
+    {
+      "title": "Source",
+      "name": "source",
+      "description": "The source to display in the legend for the host. Ex. google",
+      "type": "string",
       "required": true
     }
   ]
